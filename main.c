@@ -352,9 +352,8 @@ icon2.x = 50; icon2.y = 10; icon2.w = 64; icon2.h = 64;
         // Render grid
        Grid_render(&grid, renderer);
 
-grid_rendericons(renderer, t_icon1, icon1);
-
-if (testbla) grid_rendericons(renderer, t_icon2, icon2);
+//grid_rendericons(renderer, t_icon1, icon1);
+//if (testbla) grid_rendericons(renderer, t_icon2, icon2);
 
         // Update screen
         SDL_RenderPresent(renderer);
