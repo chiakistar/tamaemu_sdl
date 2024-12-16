@@ -13,8 +13,8 @@ endif
 
 all: tamaemu
 
-screens.c: dummy
-	make -C imgmatch
+#screens.c: dummy
+#	make -C imgmatch
 
 
 M6502/libM6502.a: dummy
@@ -25,7 +25,7 @@ tamaemu: $(OBJS) M6502/libM6502.a
 
 clean:
 	make -C M6502 clean
-	make -C imgmatch clean
+#	make -C imgmatch clean
 	rm -f $(OBJS) tamaemu
 
 .PHONY: clean dummy
